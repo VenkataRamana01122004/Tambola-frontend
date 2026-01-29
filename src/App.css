@@ -1,0 +1,55 @@
+.mode-screen {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #02040a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f8fafc;
+  font-family: system-ui, sans-serif;
+}
+
+.mode-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #facc15;
+  text-shadow: 0 0 12px rgba(250,204,21,0.4);
+}
+
+.mode-subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.mode-btn {
+  padding: 14px 24px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mode-btn:hover {
+  transform: translateY(-2px);
+}
+
+.mode-btn.host {
+  background: linear-gradient(135deg, #facc15, #eab308);
+  color: #020617;
+  box-shadow: 0 10px 30px rgba(250,204,21,0.4);
+}
+
+.mode-btn.player {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  box-shadow: 0 10px 30px rgba(56,189,248,0.4);
+}
