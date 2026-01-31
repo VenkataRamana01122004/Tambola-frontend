@@ -140,7 +140,11 @@ const ticketStyle = (theme) => ({
     borderRadius: 16,
     padding: 24,
     border: `1px solid ${colors.borderStrong}`,
+    // maxWidth: 720,
+    maxWidth: isSmallMobile ? 20 : 1020,
+    
   };
+
 
   const thirdCardStyle = {
   background: "linear-gradient(145deg, rgba(15,23,42,0.95), rgba(15,23,42,0.85))",
@@ -698,6 +702,7 @@ const [emojiFeed, setEmojiFeed] = useState([]);
 
       {/* BOTTOM ROW: Tickets */}
       {tickets.length > 0 && (
+        <div style={{ display: "flex", justifyContent: "center" }}>
   <div style={fullWidthCardStyle}>
     <h3 style={{ 
       margin: "0 0 24px", 
@@ -851,6 +856,7 @@ style={{
 </div>
       ))}
     </div>
+  </div>
   </div>
 )}
 
